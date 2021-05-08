@@ -1,0 +1,26 @@
+{
+  "name": "ac_extra_2-3_w2_trash-talk-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tzynwang/ac_extra_2-3_w2_trash-talk-generator.git"
+  },
+  "keywords": [],
+  "author": "Charlie (Tzu Yin)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tzynwang/ac_extra_2-3_w2_trash-talk-generator/issues"
+  },
+  "homepage": "https://github.com/tzynwang/ac_extra_2-3_w2_trash-talk-generator#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2"
+  }
+}
