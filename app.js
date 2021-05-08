@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const port = 3000
 const bodyParser = require('body-parser')
+const generateTrashTalk = require('./public/javascripts/trash_talk_generator.js')
 
 const expressHandlebars = require('express-handlebars')
 app.engine('handlebars', expressHandlebars({ defaultLayout: 'main' }))
@@ -15,7 +16,8 @@ app.get('/', (req, res) => {
 })
 
 app.post('/generate', (req, res) => {
-  res.render('index')
+  const talk = generateTrashTalk(req.body.jobTitle)
+  res.render('index', { talk })
 })
 
 app.listen(port, () => {
