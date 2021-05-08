@@ -17,7 +17,18 @@ app.get('/', (req, res) => {
 
 app.post('/generate', (req, res) => {
   const talk = generateTrashTalk(req.body.jobTitle)
-  res.render('index', { talk })
+  let checked = {}
+  switch (req.body.jobTitle) {
+    case 'engineer':
+      checked = { engineer: true }
+      break
+    case 'designer':
+      checked = { designer: true }
+      break
+    case 'entrepreneur':
+      checked = { entrepreneur: true }
+  }
+  res.render('index', { talk, checked })
 })
 
 app.listen(port, () => {
