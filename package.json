@@ -21,6 +21,7 @@
   "homepage": "https://github.com/tzynwang/ac_extra_2-3_w2_trash-talk-generator#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "express-handlebars": "^5.3.2"
+    "express-handlebars": "^5.3.2",
+    "handlebars-helpers": "^0.10.0"
   }
 }
